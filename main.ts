@@ -5,7 +5,6 @@ class AddCheckbox implements Command {
 	name: string = "'Add Checkbox'";
 	icon?: string | undefined = "checkbox-glyph";
 	editorCallback?: ((editor: Editor, ctx: MarkdownView | MarkdownFileInfo) => any) | undefined = (editor: Editor, view: MarkdownView) => {
-		console.log(editor.getSelection());
 		editor.replaceSelection('- [ ] ');
 	};
 }
@@ -21,7 +20,6 @@ export default class AddCheckboxPlugin extends Plugin {
 		this.ribbonIconEl = this.addRibbonIcon('checkbox-glyph', 'Add Checkbox', (evt: MouseEvent) => {
 			const view = this.app.workspace.getActiveViewOfType(MarkdownView);
 			if (view) {
-				console.log(view.editor.getSelection());
 				view.editor.replaceSelection('- [ ] ');
 			}
 		});

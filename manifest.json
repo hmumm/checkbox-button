@@ -1,7 +1,7 @@
 {
 	"id": "checkbox-button",
 	"name": "Checkbox Button",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"minAppVersion": "0.15.0",
 	"description": "Adds a button and command which add a checkbox to the current position",
 	"author": "Hayden Mumm",
